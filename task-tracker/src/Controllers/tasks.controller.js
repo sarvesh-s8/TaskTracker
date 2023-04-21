@@ -76,7 +76,7 @@ const updateTask = tryCatchMiddleware(async (req, res, next) => {
     new: true,
     runValidators: true,
   });
-  task = await TaskModel.find();
+  task = await TaskModel.find({ userId: req.userId });
   return res.status(201).json({
     success: true,
     message: "Task Edited Successfully",
