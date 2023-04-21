@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.react-date-picker__calendar{
+  width: 210px !important;
+  max-width: 100vw;
+  z-index: 1;
+}
+.react-date-picker__calendar.react-date-picker__calendar--open{
+  position: absolute;
+    inset: auto auto -120% 0px !important
+}
